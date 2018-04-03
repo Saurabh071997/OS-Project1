@@ -42,10 +42,10 @@ void main()
         //assign one or more lottery numbers to each process
 	for(i=0;i<n;i++)
 	{
-		if(burst[i]>0)
+		if(arrival[i]>0)
 		{
-			lottery[i]=burst[i]/2;
-			if ((lottery[i] == 0) && (burst[i] > 0))
+			lottery[i]=arrival[i]/2;
+			if ((lottery[i] == 0) && (arrival[i] > 0))
                 lottery[i] = 1;
                
 			for (z = 0; z < lottery[i]; z++) {
